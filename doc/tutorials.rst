@@ -76,14 +76,14 @@ launched on its own with:
 
 .. code-block:: bash
 
-    $ ros2 launch py_trees_ros_tutorials mock_robot_launch.py
+    $ ros2 launch hugr mock_robot_launch.py
 
 .. _tutorial-one:
 
 Tutorial 1 - Data Gathering
 ---------------------------
 
-.. automodule:: py_trees_ros_tutorials.one_data_gathering
+.. automodule:: hugr.one_data_gathering
     :synopsis: data gathering with the battery to blackboard behaviour
 
 .. _tutorial-two:
@@ -91,7 +91,7 @@ Tutorial 1 - Data Gathering
 Tutorial 2 - Battery Check
 --------------------------
 
-.. automodule:: py_trees_ros_tutorials.two_battery_check
+.. automodule:: hugr.two_battery_check
     :synopsis: adding a low battery check, with LED notification to the tree
 
 .. _tutorial-three:
@@ -115,7 +115,7 @@ Running
 
 .. code-block:: bash
 
-    $ ros2 launch py_trees_ros_tutorials tutorial_three_introspect_the_blackboard_launch.py
+    $ ros2 launch hugr tutorial_three_introspect_the_blackboard_launch.py
 
 In another shell:
 
@@ -169,7 +169,7 @@ Launch the tutorial:
 
 .. code-block:: bash
 
-    $ ros2 launch py_trees_ros_tutorials tutorial_four_introspect_the_tree_launch.py
+    $ ros2 launch hugr tutorial_four_introspect_the_tree_launch.py
 
 Using ``py-trees-tree-watcher`` on a private snapshot stream:
 
@@ -219,7 +219,7 @@ Using `py_trees_ros_viewer`_ to configure and visualise the stream:
 Tutorial 5 - Action Clients
 ---------------------------
 
-.. automodule:: py_trees_ros_tutorials.five_action_clients
+.. automodule:: hugr.five_action_clients
     :synopsis: prioritised work, action_clients and preemptions
 
 .. _tutorial-six:
@@ -227,7 +227,7 @@ Tutorial 5 - Action Clients
 Tutorial 6 - Context Switching
 ------------------------------
 
-.. automodule:: py_trees_ros_tutorials.six_context_switching
+.. automodule:: hugr.six_context_switching
     :synopsis: switching the context while scanning
 
 .. _tutorial-seven:
@@ -235,13 +235,13 @@ Tutorial 6 - Context Switching
 Tutorial 7 - Docking, Cancelling, Failing
 -----------------------------------------
 
-.. automodule:: py_trees_ros_tutorials.seven_docking_cancelling_failing
+.. automodule:: hugr.seven_docking_cancelling_failing
     :synopsis: docking, cancelling and failing
 
 Tutorial 8 - Dynamic Application Loading
 ----------------------------------------
 
-.. automodule:: py_trees_ros_tutorials.eight_dynamic_application_loading
+.. automodule:: hugr.eight_dynamic_application_loading
     :synopsis: dynamically inserting/pruning application subtrees
 
 Tutorial 9 - Bagging Trees

@@ -3,93 +3,93 @@
 Module API
 ==========
 
-py_trees_ros_tutorials
+hugr
 ----------------------
 
-.. automodule:: py_trees_ros_tutorials
+.. automodule:: hugr
    :synopsis: tutorials for py_trees in ros
 
-py_trees_ros_tutorials.behaviours
+hugr.behaviours
 ---------------------------------
 
-.. automodule:: py_trees_ros_tutorials.behaviours
+.. automodule:: hugr.behaviours
     :members:
     :show-inheritance:
     :synopsis: behaviours for the tutorials
 
-py_trees_ros_tutorials.mock
+hugr.mock
 ---------------------------
 
-.. automodule:: py_trees_ros_tutorials.mock
+.. automodule:: hugr.mock
     :synopsis: utilities and components for mocking a robot
 
-py_trees_ros_tutorials.mock.actions
+hugr.mock.actions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. automodule:: py_trees_ros_tutorials.mock.actions
+.. automodule:: hugr.mock.actions
     :members:
     :show-inheritance:
     :synopsis: reusable action clients for testing mock components
 
-py_trees_ros_tutorials.mock.battery
+hugr.mock.battery
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. automodule:: py_trees_ros_tutorials.mock.battery
+.. automodule:: hugr.mock.battery
     :members:
     :show-inheritance:
     :synopsis: mock the state of a battery component
 
-py_trees_ros_tutorials.mock.dock
+hugr.mock.dock
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. automodule:: py_trees_ros_tutorials.mock.dock
+.. automodule:: hugr.mock.dock
     :members:
     :show-inheritance:
     :synopsis: mock a docking controller
 
-py_trees_ros_tutorials.mock.launch
+hugr.mock.launch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. automodule:: py_trees_ros_tutorials.mock.launch
+.. automodule:: hugr.mock.launch
     :members:
     :show-inheritance:
     :synopsis: a python launcher for all mock robot processes
 
-py_trees_ros_tutorials.mock.led_strip
+hugr.mock.led_strip
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. automodule:: py_trees_ros_tutorials.mock.led_strip
+.. automodule:: hugr.mock.led_strip
     :members:
     :show-inheritance:
     :synopsis: mock a led strip notification server
 
-py_trees_ros_tutorials.mock.move_base
+hugr.mock.move_base
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. automodule:: py_trees_ros_tutorials.mock.move_base
+.. automodule:: hugr.mock.move_base
     :members:
     :show-inheritance:
     :synopsis: mock the ROS navistack move base
 
-py_trees_ros_tutorials.mock.rotate
+hugr.mock.rotate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. automodule:: py_trees_ros_tutorials.mock.rotate
+.. automodule:: hugr.mock.rotate
     :members:
     :show-inheritance:
     :synopsis: mock a very simple rotation action server
 
-py_trees_ros_tutorials.mock.safety_sensors
+hugr.mock.safety_sensors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. automodule:: py_trees_ros_tutorials.mock.safety_sensors
+.. automodule:: hugr.mock.safety_sensors
     :members:
     :show-inheritance:
     :synopsis: mock a safety sensor pipeline, requires context switching
 
-py_trees_ros_tutorials.version
+hugr.version
 ------------------------------
 
-.. automodule:: py_trees_ros_tutorials.version
+.. automodule:: hugr.version
     :members:
     :show-inheritance:
     :synopsis: package version number for users of the package

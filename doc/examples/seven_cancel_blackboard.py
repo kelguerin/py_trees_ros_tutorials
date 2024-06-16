@@ -4,7 +4,7 @@
 import py_trees
 import py_trees_ros
 import py_trees_ros_interfaces.action as py_trees_actions
-import py_trees_ros_tutorials
+import hugr
 
 if __name__ == '__main__':
 

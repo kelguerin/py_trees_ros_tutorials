@@ -16,7 +16,7 @@ import rclpy
 import rclpy.executors
 import time
 
-import py_trees_ros_tutorials.mock as mock
+import hugr.mock as mock
 
 ##############################################################################
 # Helpers

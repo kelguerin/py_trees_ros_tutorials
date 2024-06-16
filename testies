@@ -2,12 +2,12 @@
 # -*- coding: utf-8 -*-
 
 import py_trees
-import py_trees_ros_tutorials
+import hugr
 import rclpy
 import rcl_interfaces.srv as rcl_srvs
 import time
 
-behaviour = py_trees_ros_tutorials.behaviours.ScanContext(
+behaviour = hugr.behaviours.ScanContext(
     name="ContextSwitch"
 )
 

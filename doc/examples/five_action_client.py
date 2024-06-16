@@ -4,7 +4,7 @@
 import py_trees
 import py_trees_ros
 import py_trees_ros_interfaces.action as py_trees_actions
-import py_trees_ros_tutorials
+import hugr
 
 if __name__ == '__main__':
 
@@ -20,7 +20,7 @@ if __name__ == '__main__':
         action_goal=py_trees_actions.Rotate.Goal(),
         generate_feedback_message=lambda msg: "{:.2f}%%".format(msg.percentage_completed)
     )
-    flash_blue = py_trees_ros_tutorials.behaviours.FlashLedStrip(
+    flash_blue = hugr.behaviours.FlashLedStrip(
         name="Flash Blue",
         colour="blue"
     )

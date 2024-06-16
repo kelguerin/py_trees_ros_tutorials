@@ -11,7 +11,7 @@
 
 import py_trees
 import py_trees.console as console
-import py_trees_ros_tutorials
+import hugr
 import rclpy
 import rclpy.executors
 
@@ -57,9 +57,9 @@ def number_of_iterations():
 def test_led_strip():
     console.banner("Client Success")
 
-    mock_led_strip = py_trees_ros_tutorials.mock.led_strip.LEDStrip()
+    mock_led_strip = hugr.mock.led_strip.LEDStrip()
     tree_node = rclpy.create_node("tree")
-    flash_led_strip = py_trees_ros_tutorials.behaviours.FlashLedStrip(name="Flash")
+    flash_led_strip = hugr.behaviours.FlashLedStrip(name="Flash")
     flash_led_strip.setup(node=tree_node)
 
     executor = rclpy.executors.MultiThreadedExecutor(num_threads=4)

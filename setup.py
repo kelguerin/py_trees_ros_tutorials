@@ -7,7 +7,7 @@ from setuptools import find_packages, setup
 from setuptools.command.develop import develop
 from setuptools.command.install import install
 
-package_name = 'py_trees_ros_tutorials'
+package_name = 'hugr'
 
 
 # This is somewhat dodgy as it will escape any override from, e.g. the command
@@ -84,54 +84,49 @@ setup(
     data_files=[
         ('share/' + package_name, ['package.xml']),
         ('share/ament_index/resource_index/packages', [
-            'resources/py_trees_ros_tutorials']),
+            'resources/hugr']),
     ] + gather_launch_files(),
-    package_data={'py_trees_ros_tutorials': ['mock/gui/*']},
+    package_data={'hugr': ['mock/gui/*']},
     install_requires=[],  # it's all lies (c.f. package.xml, but no use case for this yet)
     extras_require={},
-    author='Daniel Stonier',
-    maintainer='Daniel Stonier <d.stonier@gmail.com>',
-    url='https://github.com/splintered-reality/py_trees_ros_tutorials',
+    author='Kelleher Guerin',
+    maintainer='Kelleher Guerin <kelleherguerin@gmail.com>',
+    url='',
     keywords=['ROS', 'ROS2', 'behaviour-trees'],
     zip_safe=True,
     classifiers=[
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
         'Programming Language :: Python',
-        'Topic :: Scientific/Engineering :: Artificial Intelligence',
-        'Topic :: Software Development :: Libraries'
     ],
     description=(
-        "Tutorials for py_trees on ROS2."
+        "Robot behavior control."
     ),
     long_description=(
-        "Tutorials demonstrating usage of py_trees in ROS and more generally,"
-        "behaviour trees for robotics."
+        "Robot behavior control."
     ),
-    license='BSD',
+    license='Proprietary',
     # test_suite="tests"
     # tests_require=['nose', 'pytest', 'flake8', 'yanc', 'nose-htmloutput']
     entry_points={
         'console_scripts': [
             # Mocks
-            'mock-battery = py_trees_ros_tutorials.mock.battery:main',
-            'mock-dashboard = py_trees_ros_tutorials.mock.dashboard:main',
-            'mock-docking-controller = py_trees_ros_tutorials.mock.dock:main',
-            'mock-led-strip = py_trees_ros_tutorials.mock.led_strip:main',
-            'mock-move-base = py_trees_ros_tutorials.mock.move_base:main',
-            'mock-rotation-controller = py_trees_ros_tutorials.mock.rotate:main',
-            'mock-safety-sensors = py_trees_ros_tutorials.mock.safety_sensors:main',
+            'mock-battery = hugr.mock.battery:main',
+            'mock-dashboard = hugr.mock.dashboard:main',
+            'mock-docking-controller = hugr.mock.dock:main',
+            'mock-led-strip = hugr.mock.led_strip:main',
+            'mock-move-base = hugr.mock.move_base:main',
+            'mock-rotation-controller = hugr.mock.rotate:main',
+            'mock-safety-sensors = hugr.mock.safety_sensors:main',
             # Mock Tests
-            'mock-dock-client = py_trees_ros_tutorials.mock.actions:dock_client',
-            'mock-move-base-client = py_trees_ros_tutorials.mock.actions:move_base_client',
-            'mock-rotate-client = py_trees_ros_tutorials.mock.actions:rotate_client',
+            'mock-dock-client = hugr.mock.actions:dock_client',
+            'mock-move-base-client = hugr.mock.actions:move_base_client',
+            'mock-rotate-client = hugr.mock.actions:rotate_client',
             # Tutorial Nodes
-            'tree-data-gathering = py_trees_ros_tutorials.one_data_gathering:tutorial_main',
-            'tree-battery-check = py_trees_ros_tutorials.two_battery_check:tutorial_main',
-            'tree-action-clients = py_trees_ros_tutorials.five_action_clients:tutorial_main',
-            'tree-context-switching = py_trees_ros_tutorials.six_context_switching:tutorial_main',
-            'tree-docking-cancelling-failing = py_trees_ros_tutorials.seven_docking_cancelling_failing:tutorial_main',
-            'tree-dynamic-application-loading = py_trees_ros_tutorials.eight_dynamic_application_loading:tutorial_main',
+            'tree-data-gathering = hugr.one_data_gathering:tutorial_main',
+            'tree-battery-check = hugr.two_battery_check:tutorial_main',
+            'tree-action-clients = hugr.five_action_clients:tutorial_main',
+            'tree-context-switching = hugr.six_context_switching:tutorial_main',
+            'tree-docking-cancelling-failing = hugr.seven_docking_cancelling_failing:tutorial_main',
+            'tree-dynamic-application-loading = hugr.eight_dynamic_application_loading:tutorial_main',
         ],
     },
 )

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # License: BSD
-#   https://github.com/splintered-reality/py_trees_ros_tutorials/raw/devel/LICENSE
+#   https://github.com/splintered-reality/hugr/raw/devel/LICENSE
 #
 ##############################################################################
 # Documentation
@@ -14,7 +14,7 @@ The mocked robot, for use with the tutorials.
 # Imports
 ##############################################################################
 
-import py_trees_ros_tutorials.one_data_gathering as tutorial
+import hugr.one_data_gathering as tutorial
 
 ##############################################################################
 # Launch Service

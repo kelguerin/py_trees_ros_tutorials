@@ -4,7 +4,7 @@
 import py_trees
 import py_trees_ros
 import py_trees_ros_interfaces.action as py_trees_actions  # noqa
-import py_trees_ros_tutorials
+import hugr
 
 if __name__ == '__main__':
 
@@ -64,7 +64,7 @@ if __name__ == '__main__':
         name="Celebrate",
         policy=py_trees.common.ParallelPolicy.SuccessOnOne()
     )
-    celebrate_flash_green = py_trees_ros_tutorials.behaviours.FlashLedStrip(name="Flash Green", colour="green")
+    celebrate_flash_green = hugr.behaviours.FlashLedStrip(name="Flash Green", colour="green")
     celebrate_pause = py_trees.timers.Timer("Pause", duration=3.0)
     dock = py_trees_ros.actions.ActionClient(
         name="Dock",

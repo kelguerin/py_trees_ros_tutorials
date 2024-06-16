@@ -7,22 +7,32 @@
 ##############################################################################
 # Documentation
 ##############################################################################
+
 """
-Tutorial 5 - Action Clients
+Launch a qt dashboard for the tutorials.
 """
 ##############################################################################
 # Imports
 ##############################################################################
 
-import hugr.five_action_clients as tutorial
+import PyQt5.QtCore as qt_core
+import PyQt5.QtWidgets as qt_widgets
+
+from . import main_window_ui
 
 ##############################################################################
-# Launch Service
+# Helpers
 ##############################################################################
 
 
-def generate_launch_description():
-    """
-    Launch description for the tutorial.
-    """
-    return tutorial.generate_launch_description()
+class MainWindow(qt_widgets.QMainWindow):
+
+    request_shutdown = qt_core.pyqtSignal(name="requestShutdown")
+
+    def __init__(self):
+        super().__init__()
+        self.ui = main_window_ui.Ui_MainWindow()
+        self.ui.setupUi(self)
+
+    def closeEvent(self, unused_event):
+        self.request_shutdown.emit()

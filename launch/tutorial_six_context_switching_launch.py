@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # License: BSD
-#   https://github.com/splintered-reality/py_trees_ros_tutorials/raw/devel/LICENSE
+#   https://github.com/splintered-reality/hugr/raw/devel/LICENSE
 #
 ##############################################################################
 # Documentation
@@ -14,7 +14,7 @@ Tutorial 6 - Context Switching
 # Imports
 ##############################################################################
 
-import py_trees_ros_tutorials.six_context_switching as tutorial
+import hugr.six_context_switching as tutorial
 
 ##############################################################################
 # Launch Service

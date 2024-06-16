@@ -4,7 +4,7 @@
 import py_trees
 import py_trees_ros
 import py_trees_ros_interfaces.action as py_trees_actions
-import py_trees_ros_tutorials
+import hugr
 
 if __name__ == '__main__':
 
@@ -14,7 +14,7 @@ if __name__ == '__main__':
         name="Notification",
         policy=py_trees.common.ParallelPolicy.SuccessOnOne()
     )
-    failed_flash_green = py_trees_ros_tutorials.behaviours.FlashLedStrip(
+    failed_flash_green = hugr.behaviours.FlashLedStrip(
         name="Flash Red",
         colour="red"
     )

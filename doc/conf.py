@@ -38,7 +38,7 @@ sys.path.insert(0, project_dir)
 ##############################################################################
 
 # General information about the project.
-project = u'py_trees_ros_tutorials'
+project = u'hugr'
 copyright = u'2020, Daniel Stonier'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -82,7 +82,7 @@ html_show_copyright = False
 html_show_sphinx = False
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'py_trees_ros_tutorials_doc'
+htmlhelp_basename = 'hugr_doc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -90,7 +90,7 @@ htmlhelp_basename = 'py_trees_ros_tutorials_doc'
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'py_trees_ros_tutorials.tex', u'py\\_trees\\_ros\\_tutorials Documentation',
+  ('index', 'hugr.tex', u'py\\_trees\\_ros\\_tutorials Documentation',
    u'Daniel Stonier', 'manual'),
 ]
 
@@ -99,7 +99,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'py_trees_ros_tutorials', u'py_trees_ros_tutorials Documentation',
+    ('index', 'hugr', u'hugr Documentation',
      [u'Daniel Stonier'], 1)
 ]
 
@@ -109,7 +109,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'py_trees_ros_tutorials', u'py_trees_ros_tutorials Documentation',
+  ('index', 'hugr', u'hugr Documentation',
    u'Daniel Stonier', 'py_trees', 'One line description of project.',
    'Miscellaneous'),
 ]
@@ -165,7 +165,6 @@ MOCK_MODULES = [
     'action_msgs', 'action_msgs.msg',
     'geometry_msgs', 'geometry_msgs.msg',
     'launch', 'launch_ros', 'launch_ros.actions',
-    # https://github.com/splintered-reality/py_trees_ros_tutorials/issues/18#issuecomment-487982404
     # 'PyQt5', 'PyQt5.QtCore', 'PyQt5.QtWidgets',
     'py_trees_ros', 'py_trees_ros.exceptions', 'py_trees_ros.mock',
     'py_trees_ros.mock.actions',
@@ -181,8 +180,6 @@ MOCK_MODULES = [
     'unique_identifier_msgs', 'unique_identifier_msgs.msg'
 ]
 
-# Has some caveats, see
-#    https://github.com/splintered-reality/py_trees_ros_tutorials/issues/18#issuecomment-487975890
 autodoc_mock_imports = MOCK_MODULES
 
 ##############################################################################
